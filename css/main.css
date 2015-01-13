@@ -1,0 +1,204 @@
+html, 
+body {
+    margin: 0;
+
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    background: #d2d2d2 url(../images/bg.png) repeat;
+}
+
+#paper {
+    width: 960px;
+    height: 1360px;
+    margin: 80px auto;
+    border: 1px solid #cccccc;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+    #paper > div {
+        height: 1200px;
+        margin: 80px;
+    }
+        #paper > div > div {
+            position: relative;
+            float: left;
+            height: 100%;
+        }
+            #paper > div > div > div { height: 100%; }
+            #left > div { padding-right: 40px; }
+            #right > div {
+                padding-left: 40px;
+                border-left: 1px solid #999999;
+            }
+
+        #left {
+            width: 40%;
+        }
+            #left h1 {
+                font-size: 64px;
+                margin-top: 0;
+            }
+                #left h1 small {
+                    display: block;
+                    font-size: 32px;
+                    font-weight: 300;
+                }
+
+            #contact {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+
+                border: 1px solid #bbbbbb;
+                border-width: 1px 0 1px 1px;
+
+                text-align: right;
+                background-color: #eeeeee;
+            }
+                #contact > div {
+                    padding: 30px 40px 30px 0px;
+                }
+                #contact hr {
+                    border: 1px solid #bbbbbb;
+                    border-width: 1px 0 0 0;
+                    margin: 20px 0 20px 25px;
+                }
+
+        #right {
+            width: 60%;
+        }
+            #right h2 {
+                margin-bottom: 40px;
+                font-size: 32px;
+                font-weight: 300;
+                font-style: italic;
+            }
+            #right div.section {
+                margin-bottom: 40px;
+                border: 1px solid #bbbbbb;
+            }
+                #right div.section h3 {
+                    padding: 10px 20px;
+                    border: 1px solid #bbbbbb;
+                    border-width: 1px 0;
+
+                    font-weight: 300;
+                    background-color: #eeeeee;
+                }
+                #right div.section h3:first-child { border-top: none; }
+                #right div.section h3:last-child { border-bottom: none; }
+                #right div.section div.content {
+                    margin: 20px;
+                }
+
+                #tech {
+                    margin: 0 5px;
+                }
+                    #tech li {
+                        margin: 0;
+                        padding: 0;
+                        width: 50%;
+                        float: left;
+                    }
+                    #tech li.highlight {
+                        width: 100%;
+                    }
+                        #tech li > div {
+                            margin: 5px 5px 10px;
+                        }
+                        #tech li:last-child > div {
+                            margin-bottom: 15px;
+                        }
+                        #tech li div.icon {
+                            float: left;
+                            height: 40px;
+                            width: 40px;
+
+                            box-shadow: inset -10px -10px 40px rgba(0, 0, 0, 0.1);
+                        }
+
+                        #tech li#tech-javascript div.icon { background-color: #f0db4f; }
+                        #tech li#tech-html div.icon { background-color: #f16529; }
+                        #tech li#tech-css div.icon { background-color: #00abe2; }
+                        #tech li#tech-php div.icon { background-color: #6c7eb7; }
+                        #tech li#tech-jquery div.icon { background-color: #108040; }
+                        #tech li#tech-drupal div.icon { background-color: #0073ba; }
+                        #tech li#tech-mysql div.icon { background-color: #e48e00; }
+                        #tech li#tech-photoshop div.icon { background-color: #1f53a6; }
+                        #tech li#tech-linux div.icon { background-color: #222222; box-shadow: inset -10px -10px 40px rgba(0, 0, 0, 0.5); }
+
+                        #tech li div.description {
+                            position: relative;
+                            margin-left: 40px;
+                            height: 40px;
+                        }
+                            #tech li div.description > div {
+                                padding: 5px 10px;
+                            }
+                            #tech li div.description h4 {
+                                font-weight: normal;
+                                font-style: 12px;
+                            }
+
+                            #tech li#tech-javascript h4 { color: #bda716; }
+                            #tech li#tech-html h4 { color: #f16529; }
+                            #tech li#tech-css h4 { color: #00abe2; }
+                            #tech li#tech-php h4 { color: #6c7eb7; }
+                            #tech li#tech-jquery h4 { color: #108040; }
+                            #tech li#tech-drupal h4 { color: #0073ba; }
+                            #tech li#tech-mysql h4 { color: #e48e00; }
+                            #tech li#tech-photoshop h4 { color: #1f53a6; }
+                            #tech li#tech-linux h4 { color: #333333; }
+
+                            #tech li div.description div.bar {
+                                height: 15px;
+                                margin-top: 6px;
+
+                                box-shadow: inset -2px -2px 20px rgba(0, 0, 0, 0.1);
+                                background-color: #f9f9f9;
+                            }
+                                #tech li div.description div.bar div.fullfilment {
+                                    float: left;
+                                    height: 100%;
+
+                                    background-color: #bbbbbb;
+                                } 
+
+
+    /* Generic Elements */
+    .clear { clear: both; }
+
+    h3 {
+        margin: 0 0 10px 0;
+
+        font-size: 18px;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    a {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    div.info {
+        line-height: 1.5em;
+    }
+
+    li {
+        position: relative;
+        padding-left: 1.5em;
+        margin-bottom: 1em;
+    }
+        li > span.bullet {
+            position: absolute;
+            left: 0;
+            top: 0.2em;
+        }
+        p b {
+            text-decoration: underline;
+            font-weight: inherit;
+        }
